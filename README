@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3812
+
+This script will be useful for users, who edit tex files with text not in
+English language. With this script you will no longer need to change
+system language when editing usual text and formulas. Internal vim
+language (see keymap) will change automatically based on cursor position.
+For example, if you set in your .vimrc or tex.vim file 
+   let tex_Keymap = 'ru'
+then in text zone your keymap will be 'ru', and if you start edit a
+formula keymap will automatically change to 'en'.
+
+It is based on default tex sintax information.
+
+To disable script you can set in your config 
+   let b:loaded_tex_AutoKeymap = 1
+
+To improve performance of the script, install vim version 7.3 with patch
+196 or later.
+
+Suggestions and improvements are appreciated.
+
